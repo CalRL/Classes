@@ -77,3 +77,5 @@ scanf ("%d", &a);
     printf("Valeur de a + b :\n%d", a+b);
 
 }
+
+//discord.gg/vtQ7aPckV5
