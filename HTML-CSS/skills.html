@@ -1,0 +1,137 @@
+<html>
+
+    <div class="wrapper">
+        <div class="container">
+            <h2>Skills</h2>
+
+            
+    <div class="skills">
+        <div class="details">
+          <span>Javascript</span>
+          <span>40%</span>
+        </div>
+        <div class="bar">
+           <div id="javascript-bar"></div>
+        </div>
+      </div>
+    <div class="skills">
+        <div class="details">
+          <span>CSS, HTML</span>
+          <span>20%</span>
+        </div>
+        <div class="bar">
+           <div id="css-html-bar"></div>
+        </div>
+      </div>
+    <div class="skills">
+        <div class="details">
+          <span>C, C++, C object based lang</span>
+          <span>20%</span>
+        </div>
+        <div class="bar">
+           <div id="cpp-bar"></div>
+        </div>
+      </div>
+     
+
+        </div>
+
+    </div>
+
+
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ff5b5b;
+}
+
+.wrapper{
+    width: 40%;
+    min-width: 590px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.container{
+    width: 100%;
+    padding: 30px 30px 50px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+} 
+
+.container *{
+    font-family: "Poppins",sans-serif;
+    color: black;
+    font-weight: 500;
+}
+
+h2{
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+}
+
+
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bar{
+    position: relative;
+
+    border: 2px solid #ff5b5b00;
+
+    border-radius: 20px;
+
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #ff5b5b;
+
+
+}
+
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+
+#javascript-bar{
+    animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+    100%{
+        width: 40%;
+    }
+}
+#css-html-bar{
+    animation: css-fill 2s forwards;
+}
+        @keyframes css-fill {
+            100%{
+                width: 20%;
+            }
+        }
+#cpp-bar{
+    animation: cpp-fill 2s forwards;
+}
+@keyframes cpp-fill{
+    100%{
+        width: 20%;
+    }
+}
+    </style>
+</html>
