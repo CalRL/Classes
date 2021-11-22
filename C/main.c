@@ -213,10 +213,10 @@ int main(){
     int i;
     int fin;
 
-    printf("tu cherche ?\n 1) tension\n 2) courant \n 3) resistence ");
+    printf("tu cherches ?\n 1) tension\n 2) courant \n 3) resistence ");
     scanf("%d", &chose);
     if(chose = 1){
-        printf("rentre l intensiter");
+        printf("rentre l'intensité");
         scanf("%d", &i);
         printf("rentre la resistance");
         scanf("%d", &r);
@@ -230,7 +230,7 @@ int main(){
         fin = courant(i,r);
     }
     if(chose = 3){
-        printf("rentre l intensiter");
+        printf("rentre l'intensité");
         scanf("%d", &i);
         printf("rentre la tension");
         scanf("%d", &r);
